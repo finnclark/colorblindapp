@@ -1,16 +1,6 @@
 /*Main*/
 
 @font-face {
-	font-family: 'chicago';
-	src: url(../fonts/ChicagoFLF.ttf);
-}
-
-@font-face {
-	font-family: 'monaco';
-	src: url(../fonts/monaco.ttf);
-}
-
-@font-face {
 	font-family: 'sailec-reg';
 	src: url(../fonts/Sailec-Regular.otf);
 }
@@ -20,35 +10,14 @@
 	src: url(../fonts/Sailec-Bold.otf);
 }
 
-@font-face {
-	font-family: 'proximanovasoft-reg';
-	src: url(../fonts/ProximaNovSoft-Regular.otf);
-}
-
-@font-face {
-	font-family: 'proximanovasoft-med';
-	src: url(../fonts/ProximaNovSoft-Medium.otf);
-}
-
-@font-face {
-	font-family: 'proximanovasoft-semibold';
-	src: url(../fonts/ProximaNovSoft-Semibold.otf);
-}
-
-@font-face {
-	font-family: 'proximanovasoft-bold';
-	src: url(../fonts/ProximaNovSoft-Bold.ttf);
-}
-
-
-
-
+/* 'proxima-nova-soft' weights = 400, 500, 600, 700 */
 
 
 
 
 h1{
-	font-family: 'proximanovasoft-bold', 'proximanovasoft-semibold';
+	font-family: 'proxima-nova-soft';
+	font-weight: 700;
 	font-size: 45px;
 	color: #1A1A1A;
 }
