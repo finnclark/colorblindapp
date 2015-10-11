@@ -31,12 +31,12 @@
 }
 
 @font-face {
-	font-family: proximanovasoft-semibold;
+	font-family: proximanovasoft-semibol;
 	src: url(../fonts/ProximaNovSoft-Semibold.otf);
 }
 
 @font-face {
-	font-family: proximanovasoft-bold;
+	font-family: proximanovasoft-bol;
 	src: url(../fonts/ProximaNovSoft-Bold.ttf);
 }
 
@@ -48,7 +48,7 @@
 
 
 h1{
-	font-family: 'proximanovasoft-bold', 'proximanovasoft-semibold';
+	font-family: 'proximanovasoft-bol', 'proximanovasoft-semibol';
 	font-size: 45px;
 	color: #1A1A1A;
 }
