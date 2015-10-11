@@ -48,7 +48,7 @@
 
 
 h1{
-	font-family: 'proximanovasoft-bold';
+	font-family: 'proximanovasoft-bold', 'proximanovasoft-semibold';
 	font-size: 45px;
 	color: #1A1A1A;
 }
