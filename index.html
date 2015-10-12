@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.countdownTimer.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
 	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
@@ -16,6 +18,7 @@
 	<script type="text/javascript" src="js/jquery.typer.js"></script>
 	<script src="https://use.typekit.net/gzi0hpd.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<script src="js/modernizr.custom.js"></script>
 </head>
 <body>
 
@@ -26,6 +29,21 @@
   
 </script>
 <!-- End Google Tag Manager -->
+
+<script type="text/javascript">
+	$(window).scroll(function() {    
+	    var scroll = $(window).scrollTop();
+
+	    if (scroll >= 120) {
+	        $(".navigation").addClass("navigation-small");
+	    } else {
+	        $(".navigation").removeClass("navigation-small");
+	    }
+	});
+</script>
+
+
+
 
 	<div class="container-fluid">
 		<div class="row navigation">
@@ -54,11 +72,103 @@
 			
 		</div>
 
+		<div class="section3">
+			<h1>Creating a colour scheme</h1>
+			<div class="container">
+				<div id="cbp-fwslider" class="cbp-fwslider">
+					<ul>
+						<li>
+							<div class="col-md-6 col-sm-6 col-xs-6 left-column">
+								<img src="img/daisychain-type.png" alt="img01"/>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 right-column">
+								<h2>Type in a name for<br>
+								your scheme creation</h2>
+
+								<br>
+
+								<p>This could be a rebrand of an existing
+								<br>company, new concept or a revolutionary <br>app idea. It’s completely up to you!</p>
+							</div>
+							<div class="col-md-3 col-sm-0 col-xs-0"></div>
+						</li>
+
+						<li>
+							<div class="col-md-6 col-sm-6 col-xs-6 left-column">
+								<img src="img/daisychain-values.gif" alt="img02"/>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 right-column">
+								<h2>Choose values that <br>
+								reflect your brand</h2>
+
+								<br>
+
+								<p>These decisions directly affect the
+								<br>outcome of your colour scheme.
+
+								<br><br>
+
+								The technicalites of the colour picking is
+								<br>all done by us, so the process has been
+								<br>kept super simple for you.</p>
+							</div>
+							<div class="col-md-3 col-sm-0 col-xs-0"></div>
+						</li>
+
+						<li>
+							<div class="col-md-6 col-sm-6 col-xs-6 left-column">
+								<img src="img/daisychain-result.png" alt="img03"/>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 right-column">
+								<h2>Boom! Easy as pie. <br>Mmmmm, pie</h2>
+								<br>
+								<p>With the combination of your value<br>
+								selections and our code structures, a<br>
+								personalised colour scheme is produced.
+
+								<br><br>
+
+								You can easily export the scheme or edit<br>
+								individual colours slighty to make the<br>
+								perfect combination.</p>
+							</div>
+							<div class="col-md-3 col-sm-0 col-xs-0"></div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
 
 	</div>
 
 
 
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/jquery.cbpFWSlider.min.js"></script>
+<script>
+	$( function() {
+		/*
+		- how to call the plugin:
+		$( selector ).cbpFWSlider( [options] );
+		- options:
+		{
+			// default transition speed (ms)
+			speed : 500,
+			// default transition easing
+			easing : 'ease'
+		}
+		- destroy:
+		$( selector ).cbpFWSlider( 'destroy' );
+		*/
+
+		$( '#cbp-fwslider' ).cbpFWSlider();
+
+	} );
+</script>
 </body>
 
 

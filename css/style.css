@@ -10,13 +10,18 @@
 	src: url(../fonts/Sailec-Bold.otf);
 }
 
+@font-face {
+	font-family: 'proxima-nova-soft-bold';
+	src: url(../fonts/ProximaNovaSoft-Bold.ttf);
+}
+
 /* 'proxima-nova-soft' weights = 400, 500, 600, 700 */
 
 
 
 
 h1{
-	font-family: 'proxima-nova-soft';
+	font-family: 'proxima-nova-soft', 'proxima-nova-soft-bold';
 	font-weight: 700;
 	font-size: 45px;
 	color: #1A1A1A;
@@ -29,7 +34,7 @@ h2{
 }
 
 a{
-	color: #ffffff;
+	color: white;
 }
 a:hover{
 	color: #F5692F;
@@ -60,12 +65,19 @@ body{
 	position: fixed;
 	display: inline-block;
 	z-index: 999;
+
+	
+	-webkit-transition: height 500ms; /* For Safari 3.1 to 6.0 */
+    transition: height 500ms;
 }
 
 .navigation img{
 	width: 180px;
 	height: auto;
 	padding-top: 60px;
+
+    -webkit-transition: width 500ms; /* For Safari 3.1 to 6.0 */
+    transition: width 500ms;
 }
 .navigation img:hover{
 	opacity: .85;
@@ -77,7 +89,48 @@ body{
 	position: fixed;
 	right: 50px;
 	top: 60px;
+
+	-webkit-transition: right 500ms; /* For Safari 3.1 to 6.0 */
+	transition: right 500ms;
+	-webkit-transition: top 500ms; /* For Safari 3.1 to 6.0 */
+	transition: top 500ms;
 }
+
+.navigation a{
+	color: white !important;
+}
+
+.navigation a:hover{
+	color: #F5692F !important;
+}
+
+/* Navigation Small */
+
+.navigation-small{
+	height: 166px;
+	background-color: #A7D7D4;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	display: inline-block;
+	z-index: 999;
+}
+
+.navigation-small img{
+	width: 115px;
+	margin: 45px 0 0 25px;
+	padding: 0;
+	float: left;
+}
+
+.navigation-small p{
+	right: 40px;
+	top: 45px;
+}
+.navigation-small a:hover{
+	color: #F5692F !important;
+}
+
 
 
 
@@ -142,6 +195,94 @@ body{
 
 
 
+/* Section Three */
+
+.section3{
+	height: 700px;
+	width: 100%;
+	background-color: #F5692F;
+	margin-top: -5px;
+	text-align: center;
+}
+
+.section3 h1{
+	margin: 0 0 -170px 0;
+	padding-top: 120px;
+	color: #F2F2F2;
+}
+
+.section3 img{
+	width: 200px;
+	height: auto;
+}
+
+.left-column, .right-column{
+	padding: 0 25px;
+}
+
+.left-column img{
+	float: right;
+}
+
+.right-column h2, .right-column p{
+	float: left;
+	text-align: left;
+	color: #F2F2F2;
+}
+
+.right-column h2{
+	margin-top: 18px;
+}
+
+.right-column p{
+	font-family: 'sailec-reg';
+	font-size: 13px;
+	line-height: 1.6;
+	width: auto;
+	margin-top: 30px;
+}
+
+
+
+
+/*Slider*/
+
+.cbp-fwslider{
+	padding-top: 230px !important;
+}
+
+.cbp-fwdots{
+	display: none !important;
+}
+
+.cbp-fwslider nav span {
+	width: 40px !important;
+	height: auto !important;
+	background-color: transparent !important;
+	color: transparent !important;
+}
+
+.cbp-fwslider nav span.cbp-fwprev{
+	background-image: url('../img/arrow-left.svg');
+	background-repeat: no-repeat;
+}
+.cbp-fwslider nav span.cbp-fwprev:hover{
+	background-image: url('../img/arrow-left.svg');
+	background-repeat: no-repeat;
+}
+
+.cbp-fwslider nav span.cbp-fwnext{
+	background-image: url('../img/arrow-right.svg');
+	background-repeat: no-repeat;
+}
+.cbp-fwslider nav span.cbp-fwnext:hover{
+	background-image: url('../img/arrow-right.svg');
+	background-repeat: no-repeat;
+}
+
+
+
+
 
 
 
@@ -190,6 +331,39 @@ body{
 
 	.section1 div div{
 		margin-top: -520px;
+	}
+}
+
+
+@media (max-width: 700px){
+
+	.section3 {
+		height: 745px;
+	}
+
+	.section3 h1{
+		padding-top: 80px;
+	}
+
+	.section3 img{
+		width: 160px;
+		margin: 0 auto;
+		padding-left: 15px;
+	}
+
+	.section3 h2{
+		font-size: 16px;
+		padding-top: 20px;
+	}
+	.section3 p{
+		font-size: 10px;
+	}
+
+	.right-column, .left-column{
+		padding: 0 15px;
+		margin: 0 auto;
+		float: none;
+		text-align: center;
 	}
 }
 
