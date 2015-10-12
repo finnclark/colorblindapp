@@ -23,7 +23,7 @@
 	// the options
 	$.CBPFWSlider.defaults = {
 		// default transition speed (ms)
-		speed : 500,
+		speed : 800,
 		// default transition easing
 		easing : 'ease'
 	};

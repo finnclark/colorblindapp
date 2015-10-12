@@ -35,6 +35,9 @@ h2{
 
 a{
 	color: white;
+
+	-webkit-transition: all 200ms; /* For Safari 3.1 to 6.0 */
+    transition: all 200ms;
 }
 a:hover{
 	color: #F5692F;
@@ -170,6 +173,7 @@ body{
 	height: 160px;
 	width: 100%;
 	background-color: #F5F5F5;
+	margin-bottom: -5px !important;
 }
 
 .section2 div{
@@ -185,6 +189,9 @@ body{
 .section2 h2 a{
 	color: #75D2E4;
 }
+.section2 h2 a:hover{
+	color: #F76920;
+}
 
 .section2 img{
 	width: 100px;
@@ -198,10 +205,9 @@ body{
 /* Section Three */
 
 .section3{
-	height: 700px;
+	height: 702px;
 	width: 100%;
 	background-color: #F5692F;
-	margin-top: -5px;
 	text-align: center;
 }
 
@@ -284,6 +290,75 @@ body{
 
 
 
+/* Section Four */
+
+.section4{
+	width: 100%;
+	height: auto;
+	background-color: #E0E4D0;
+}
+
+.section4 h1{
+	margin-bottom: 140px;
+}
+
+.section4 img{
+	width: 400px;
+	height: auto;
+	margin-top: -40px;
+	margin-left: 100px;
+}
+
+.section4 div{
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.section4 div:first-child{
+	padding: 120px 0 0 160px;
+}
+
+.section4 div div{
+	width: 250px;
+	padding: 0;
+}
+
+.section4 p{
+	font-family: 'sailec-reg';
+	font-size: 13px;
+	line-height: 1.6;
+	width: auto;
+	margin-top: 30px;
+	color: #333333
+}
+
+
+
+
+
+
+
+
+
+/* Section Five */
+
+.section5{
+	background-color: #D8DCC9;
+}
+
+.section5 a{
+	color: #999999 !important;
+}
+.section5 a:hover{
+	color: #ffffff !important;
+}
+
+
+
+
+
+
+
 
 
 
@@ -313,6 +388,15 @@ body{
 
 
 
+@media (max-width: 1022px){
+
+	.section4 img{
+		width: 300px;
+	}
+}
+
+
+
 @media (max-width: 991px){
 
 
@@ -323,6 +407,10 @@ body{
 	.section2 div{
 		margin-top: 72px;
 	}
+
+	.section4 h1{
+		margin-bottom: 70px;
+	}
 }
 
 
@@ -331,6 +419,24 @@ body{
 
 	.section1 div div{
 		margin-top: -520px;
+	}
+
+	.section4 img{
+		margin-left: 40px;
+	}
+
+	.section4 div:first-child{
+		padding-left: 60px;
+	}
+}
+
+
+
+@media (max-width: 767px){
+
+	.section4 img{
+		width: 200px;
+		margin-top: 50px;
 	}
 }
 
@@ -351,11 +457,11 @@ body{
 		padding-left: 15px;
 	}
 
-	.section3 h2{
+	.section3 h2, .section4 h2{
 		font-size: 16px;
 		padding-top: 20px;
 	}
-	.section3 p{
+	.section3 p, .section4 p{
 		font-size: 10px;
 	}
 
@@ -364,6 +470,14 @@ body{
 		margin: 0 auto;
 		float: none;
 		text-align: center;
+	}
+
+	.left-column img, .right-column h2, .right-column p{
+		float: left;
+	}
+
+	.cbp-fwslider{
+		padding-bottom: 0 !important;
 	}
 }
 
@@ -403,6 +517,15 @@ body{
 		width: 60px;
 		height: 60px;
 		margin-top: -65px;
+	}
+
+
+	.section4 div div{
+		width: 200px;
+	}
+
+	.section4 img{
+		margin-left: 0;
 	}
 }
 
@@ -449,6 +572,11 @@ body{
 		margin-top: -65px !important;
 	}
 
+	.section2 div div{
+		margin-top: -8px !important;
+		padding: 0px 0 6px 0;
+	}
+
 	.section2 h2{
 		padding-right: 90px;
 	}
@@ -462,7 +590,25 @@ body{
 	.section2 div{
 		margin-top: 70px;
 	}
-	
+
+
+
+	.section4 img{
+		margin-left: -20px;
+		width: 150px;
+		margin-top: -50px;
+	}
+
+	.section4 div:first-child {
+	    padding-left: 30px;
+	    padding-top: 40px;
+	    padding-bottom: 50px;
+	}
+
+	.section4 div{
+		margin-bottom: 40px;
+	}
+
 }
 
 
